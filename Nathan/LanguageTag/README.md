@@ -1,6 +1,6 @@
 # Módulo Nathan\_LanguageTag para Magento 2
 
-## 🧩 Descrição
+## 📦 Visão Geral
 
 O módulo `Nathan_LanguageTag` adiciona automaticamente \*\*tags \*\***`<link rel="alternate" hreflang="...">`** no `<head>` das páginas CMS do Magento 2. Isso permite que mecanismos de busca, como o Google, identifiquem e indexem corretamente versões traduzidas de uma mesma página em diferentes store views (idiomas/países), otimizando o SEO internacional da loja.
 
@@ -53,7 +53,7 @@ bin/magento cache:clean
 
 3. Verifique se as tags hreflang estão sendo renderizadas acessando uma página CMS com versões em múltiplos store views.
 
-📄 Exemplo de saída gerada
+## 📄 Exemplo de saída gerada
 ```html
 <link rel="alternate" hreflang="en-us" href="https://sualoja.com/en-us/about-us"/>
 <link rel="alternate" hreflang="pt-br" href="https://sualoja.com/pt-br/about-us"/>
