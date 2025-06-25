@@ -57,9 +57,7 @@ class LanguageTagGeneratorTest extends TestCase
 
         $urlFinder = $this->createMock(UrlFinderInterface::class);
         $urlFinder->method('findOneByData')->willReturn($urlRewrite);
-
         $logger = $this->createMock(LoggerInterface::class);
-
         $pageResource = $this->createMock(PageResource::class);
 
         $generator = new LanguageTagGenerator(
@@ -72,7 +70,6 @@ class LanguageTagGeneratorTest extends TestCase
         );
 
         $result = $generator->generateForCmsPage(123);
-
         $this->assertNotEmpty($result);
         $this->assertStringContainsString('hreflang="en-us"', $result[0]);
         $this->assertStringContainsString('https://example.com/about-us', $result[0]);

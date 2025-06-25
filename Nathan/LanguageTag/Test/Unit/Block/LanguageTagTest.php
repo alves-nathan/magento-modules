@@ -21,9 +21,7 @@ class LanguageTagTest extends TestCase
     {
         $request = $this->createMock(Http::class);
         $request->method('getFullActionName')->willReturn('catalog_product_view');
-
         $linkGenerator = $this->createMock(LanguageTagGeneratorInterface::class);
-
         $context = $this->createMock(Context::class);
         $block = new LanguageTag($context, $request, $linkGenerator);
 
